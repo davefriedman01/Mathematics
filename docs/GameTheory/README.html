@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Channel Coding &#8212; Mathematics</title>
+    <title>Game Theory &#8212; Mathematics</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Linear Programming" href="../LinearProgramming/README.html" />
-    <link rel="prev" title="Linear Algebra" href="../LinearAlgebra.html" />
+    <link rel="next" title="Random Walks" href="../RandomWalks.html" />
+    <link rel="prev" title="Linear Programming" href="../LinearProgramming/README.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -176,8 +176,8 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ChannelCoding/README.html">
    Channel Coding
   </a>
  </li>
@@ -186,8 +186,8 @@
    Linear Programming
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../GameTheory/README.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Game Theory
   </a>
  </li>
@@ -266,7 +266,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/ChannelCoding/README.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/GameTheory/README.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -312,44 +312,57 @@
         
               <div>
                 
-  <div class="section" id="channel-coding">
-<h1>Channel Coding<a class="headerlink" href="#channel-coding" title="Permalink to this headline">¶</a></h1>
-<p>BCH Code <a class="reference external" href="https://en.wikipedia.org/wiki/BCH_code">Wiki</a> <br>
-Bianry Code <a class="reference external" href="https://en.wikipedia.org/wiki/Binary_code">Wiki</a> <br>
-Bit Rate <a class="reference external" href="https://en.wikipedia.org/wiki/Bit_rate">Wiki</a> <br>
-Block Code <a class="reference external" href="https://en.wikipedia.org/wiki/Block_code">Wiki</a> <br>
-Channel Capacity <a class="reference external" href="https://en.wikipedia.org/wiki/Channel_capacity">Wiki</a> <br>
-Channel Coding (Error Detection and Correction) <a class="reference external" href="https://en.wikipedia.org/wiki/Error_detection_and_correction">Wiki</a> <br>
-Code <a class="reference external" href="https://en.wikipedia.org/wiki/Code">Wiki</a> <br>
-Code Rate <a class="reference external" href="https://en.wikipedia.org/wiki/Code_rate">Wiki</a> <br>
-Codeword <a class="reference external" href="https://en.wikipedia.org/wiki/Code_word">Wiki</a> <br>
-Coding Theory <a class="reference external" href="https://en.wikipedia.org/wiki/Coding_theory">Wiki</a> <br>
-Convolutional Code <a class="reference external" href="https://en.wikipedia.org/wiki/Convolutional_code">Wiki</a> <br>
-Cyclic Code <a class="reference external" href="https://en.wikipedia.org/wiki/Cyclic_code">Wiki</a> <br>
-CRC Cyclic Redundancy Check <a class="reference external" href="https://en.wikipedia.org/wiki/Cyclic_redundancy_check">Wiki</a> <br>
-Decoding <a class="reference external" href="https://en.wikipedia.org/wiki/Decoding_methods">Wiki</a> <br>
-ECC Error-Correcting Code <a class="reference external" href="https://en.wikipedia.org/wiki/Error_correction_code">Wiki</a> <br>
-Golay Code <a class="reference external" href="https://en.wikipedia.org/wiki/Golay_code">Wiki</a> <br>
-Goppa Code <a class="reference external" href="https://en.wikipedia.org/wiki/Goppa_code">Wiki</a> <br>
-Hadamard Code <a class="reference external" href="https://en.wikipedia.org/wiki/Hadamard_code">Wiki</a> <br>
-Hamming Code <a class="reference external" href="https://en.wikipedia.org/wiki/Hamming_code">Wiki</a> <br>
-Hamming Distance <a class="reference external" href="https://en.wikipedia.org/wiki/Hamming_distance">Wiki</a> <br>
-Information Rate <a class="reference external" href="https://en.wikipedia.org/wiki/Bit_rate#Information_rate">Wiki</a> <br>
-Information Theory <a class="reference external" href="https://en.wikipedia.org/wiki/Information_theory">Wiki</a> <br>
-Linear Code <a class="reference external" href="https://en.wikipedia.org/wiki/Linear_code">Wiki</a> <br>
-Maximum Likelihood Decoding <br>
-Minimum Distance Decoding <br>
-Noisy Channel Model <a class="reference external" href="https://en.wikipedia.org/wiki/Noisy_channel_model">Wiki</a> <br>
-Parity Bit <a class="reference external" href="https://en.wikipedia.org/wiki/Parity_bit">Wiki</a> <br>
-Perfect Code <a class="reference external" href="https://en.wikipedia.org/wiki/Hamming_bound#Perfect_codes">Wiki</a> <br>
-Plotkin Bound <a class="reference external" href="https://en.wikipedia.org/wiki/Plotkin_bound">Wiki</a> <br>
-Polar Code <a class="reference external" href="https://en.wikipedia.org/wiki/Polar_code_(coding_theory)">Wiki</a> <br>
-Polynomial Code <a class="reference external" href="https://en.wikipedia.org/wiki/Polynomial_code">Wiki</a> <br>
-Reed-Muller Code <a class="reference external" href="https://en.wikipedia.org/wiki/Reed%E2%80%93Muller_code">Wiki</a> <br>
-Reed-Solomon Code <a class="reference external" href="https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction">Wiki</a> <br>
-Repetition Code <a class="reference external" href="https://en.wikipedia.org/wiki/Repetition_code">Wiki</a> <br>
-Shannon’s Theorem (Noisy-Channel Coding Theorem) <a class="reference external" href="https://en.wikipedia.org/wiki/Noisy-channel_coding_theorem">Wiki</a> <br>
-Syndrome Decoding <a class="reference external" href="https://en.wikipedia.org/wiki/Decoding_methods#Syndrome_decoding">Wiki</a> <br></p>
+  <div class="section" id="game-theory">
+<h1>Game Theory<a class="headerlink" href="#game-theory" title="Permalink to this headline">¶</a></h1>
+<p><strong>Figures</strong></p>
+<p>Berlekamp, Elwyn (1940-2019) <a class="reference external" href="https://en.wikipedia.org/wiki/Elwyn_Berlekamp">Wiki</a> <br>
+Conway, John (1937-2020) <a class="reference external" href="https://en.wikipedia.org/wiki/John_Horton_Conway">Wiki</a> <br></p>
+<p><strong>Terms</strong></p>
+<p>AGT Algorithmic Game Theory <a class="reference external" href="https://en.wikipedia.org/wiki/Algorithmic_game_theory">Wiki</a> <br>
+Alpha-Beta Pruning <a class="reference external" href="https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning">Wiki</a> <br>
+Auction <a class="reference external" href="https://en.wikipedia.org/wiki/Auction">Wiki</a> <br>
+Backward Induction <a class="reference external" href="https://en.wikipedia.org/wiki/Backward_induction">Wiki</a> <br>
+Bayesian Game <a class="reference external" href="https://en.wikipedia.org/wiki/Bayesian_game">Wiki</a> <br>
+Combinatorial Auction <a class="reference external" href="https://en.wikipedia.org/wiki/Combinatorial_auction">Wiki</a> <br>
+CGT Combinatorial Game Theory <a class="reference external" href="https://en.wikipedia.org/wiki/Combinatorial_game_theory">Wiki</a> <br>
+Common Knowledge <a class="reference external" href="https://en.wikipedia.org/wiki/Common_knowledge_(logic)">Wiki</a> <br>
+Complete Information <a class="reference external" href="https://en.wikipedia.org/wiki/Complete_information">Wiki</a> <br>
+Connection Game <a class="reference external" href="https://en.wikipedia.org/wiki/Connection_game">Wiki</a> <br>
+Continuous Game <a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_game">Wiki</a> <br>
+Cooling and Heating <a class="reference external" href="https://en.wikipedia.org/wiki/Cooling_and_heating_(combinatorial_game_theory)">Wiki</a> <br>
+Cooperative Game <a class="reference external" href="https://en.wikipedia.org/wiki/Cooperative_game_theory">Wiki</a> <br>
+Economic Equilibrium <a class="reference external" href="https://en.wikipedia.org/wiki/Economic_equilibrium">Wiki</a> <br>
+Expectiminimax <a class="reference external" href="https://en.wikipedia.org/wiki/Expectiminimax">Wiki</a> <br>
+Extensive-Form Game <a class="reference external" href="https://en.wikipedia.org/wiki/Extensive-form_game">Wiki</a> <br>
+Game Classification <a class="reference external" href="https://en.wikipedia.org/wiki/Game_classification">Wiki</a> <br>
+Game Complexity <a class="reference external" href="https://en.wikipedia.org/wiki/Game_complexity">Wiki</a> <br>
+Game Theory <a class="reference external" href="https://en.wikipedia.org/wiki/Game_theory">Wiki</a> <br>
+Game Tree <a class="reference external" href="https://en.wikipedia.org/wiki/Game_tree">Wiki</a> <br>
+Impartial Game <a class="reference external" href="https://en.wikipedia.org/wiki/Impartial_game">Wiki</a> <br>
+Information Set <a class="reference external" href="https://en.wikipedia.org/wiki/Information_set_(game_theory)">Wiki</a> <br>
+Minimax <a class="reference external" href="https://en.wikipedia.org/wiki/Minimax">Wiki</a> <br>
+Nash Equilibrium <a class="reference external" href="https://en.wikipedia.org/wiki/Nash_equilibrium">Wiki</a> <br>
+Non Cooperative Game <a class="reference external" href="https://en.wikipedia.org/wiki/Non-cooperative_game_theory">WIki</a> <br>
+Normal-Form Game <a class="reference external" href="https://en.wikipedia.org/wiki/Normal-form_game">Wiki</a> <br>
+Partisan Game <a class="reference external" href="https://en.wikipedia.org/wiki/Partisan_game">Wiki</a> <br>
+Perfect Competition <a class="reference external" href="https://en.wikipedia.org/wiki/Perfect_competition">Wiki</a> <br>
+Perfect Information <a class="reference external" href="https://en.wikipedia.org/wiki/Perfect_information">Wiki</a> <br>
+Positional Information <a class="reference external" href="https://en.wikipedia.org/wiki/Positional_game">Wiki</a> <br>
+Repeated Game <a class="reference external" href="https://en.wikipedia.org/wiki/Repeated_game">Wiki</a> <br>
+Retrograde Analysis <a class="reference external" href="https://en.wikipedia.org/wiki/Retrograde_analysis">Wiki</a> <br>
+Sequential Auction <a class="reference external" href="https://en.wikipedia.org/wiki/Sequential_auction">Wiki</a> <br>
+Sequential Game <a class="reference external" href="https://en.wikipedia.org/wiki/Sequential_game">Wiki</a> <br>
+Simultaneous Game <a class="reference external" href="https://en.wikipedia.org/wiki/Simultaneous_game">Wiki</a> <br>
+Solution Concept <a class="reference external" href="https://en.wikipedia.org/wiki/Solution_concept">Wiki</a> <br>
+Sprague-Grundy Theorem <a class="reference external" href="https://en.wikipedia.org/wiki/Sprague%E2%80%93Grundy_theorem">Wiki</a> <br>
+Star <a class="reference external" href="https://en.wikipedia.org/wiki/Star_(game_theory)">Wiki</a> <br>
+Strategy <a class="reference external" href="https://en.wikipedia.org/wiki/Strategy_(game_theory)">Wiki</a> <br>
+Strategy-Stealing Argument <a class="reference external" href="https://en.wikipedia.org/wiki/Strategy-stealing_argument">Wiki</a> <br>
+Subgame <a class="reference external" href="https://en.wikipedia.org/wiki/Subgame">Wiki</a> <br>
+Subgame Perfect Equilibrium <a class="reference external" href="https://en.wikipedia.org/wiki/Subgame_perfect_equilibrium">Wiki</a> <br>
+Topological Game <a class="reference external" href="https://en.wikipedia.org/wiki/Topological_game">Wiki</a> <br>
+Zero Game <a class="reference external" href="https://en.wikipedia.org/wiki/Zero_game">Wiki</a> <br>
+Zero-Sum Game <a class="reference external" href="https://en.wikipedia.org/wiki/Zero-sum_game">Wiki</a> <br></p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -365,7 +378,7 @@ Syndrome Decoding <a class="reference external" href="https://en.wikipedia.org/w
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./ChannelCoding"
+            path: "./GameTheory"
         },
         predefinedOutput: true
     }
@@ -382,19 +395,19 @@ Syndrome Decoding <a class="reference external" href="https://en.wikipedia.org/w
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="../LinearAlgebra.html" title="previous page">
+        <a class="left-prev" href="../LinearProgramming/README.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Linear Algebra</p>
+                <p class="prevnext-title">Linear Programming</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="../LinearProgramming/README.html" title="next page">
+        <a class="right-next" href="../RandomWalks.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Linear Programming</p>
+                <p class="prevnext-title">Random Walks</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
