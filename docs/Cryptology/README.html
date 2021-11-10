@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptology &#8212; Mathematics</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Random Walks" href="../RandomWalks.html" />
+    <link rel="prev" title="Game Theory" href="../GameTheory/README.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Mathematics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Mathematics
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Figures.html">
+   Figures
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Foundations
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Sets.html">
+   Sets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ComplexNumbers.html">
+   Complex Numbers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../NumberTheory.html">
+   Number Theory
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../AlgorithmicNumberTheory.html">
+   Algorithmic Number Theory
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ModularArithmetic.html">
+   Modular Arithmetic
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Polynomials.html">
+   Real Polynomial in one variable
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ConicSections.html">
+   Conic Sections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Structures.html">
+   Structures
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Groups.html">
+   Groups
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Fields.html">
+   Fields
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../LinearAlgebra.html">
+   Linear Algebra
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Discrete Mathematics
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ChannelCoding/README.html">
+   Channel Coding
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../LinearProgramming/README.html">
+   Linear Programming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../GameTheory/README.html">
+   Game Theory
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Cryptology
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Modeling
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../RandomWalks.html">
+   Random Walks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DigitalSignalProcessing.html">
+   Digital Signal Processing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DifferentialEquations.html">
+   Differential Equations
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Bibliography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bibliography.html">
+   Bibliography
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Cryptology/README.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/davefriedman01/Mathematics/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="cryptology">
+<h1>Cryptology<a class="headerlink" href="#cryptology" title="Permalink to this headline">¶</a></h1>
+<p><strong>Figures</strong></p>
+<p>Diffie, Whitfield <a class="reference external" href="https://en.wikipedia.org/wiki/Whitfield_Diffie">Wiki</a> <br>
+Elgamal, Taher <a class="reference external" href="https://en.wikipedia.org/wiki/Taher_Elgamal">Wiki</a> <br>
+Goldwasser, Shafrira <a class="reference external" href="https://en.wikipedia.org/wiki/Shafi_Goldwasser">Wiki</a> <br>
+Hellman, Martin <a class="reference external" href="https://en.wikipedia.org/wiki/Martin_Hellman">Wiki</a> <br>
+Merkle, Ralph <a class="reference external" href="https://en.wikipedia.org/wiki/Ralph_Merkle">Wiki</a> <br>
+Micali, Silvio <a class="reference external" href="https://en.wikipedia.org/wiki/Silvio_Micali">Wiki</a> <br>
+Naor, Moni <a class="reference external" href="https://en.wikipedia.org/wiki/Moni_Naor">Wiki</a> <br>
+Shamir, Adi <a class="reference external" href="https://en.wikipedia.org/wiki/Adi_Shamir">Wiki</a> <br>
+Shoup, Victor <a class="reference external" href="https://en.wikipedia.org/wiki/Victor_Shoup">Wiki</a> <br>
+Yao, Andrew <a class="reference external" href="https://en.wikipedia.org/wiki/Andrew_Yao">Wiki</a> <br></p>
+<p><strong>Terms</strong></p>
+<p>CCA2 Adaptive Chosen-Ciphertext Attack <a class="reference external" href="https://en.wikipedia.org/wiki/Adaptive_chosen-ciphertext_attack">Wiki</a> <br>
+AES Advanced Encryption Standard <a class="reference external" href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">Wiki</a> <br>
+Adversary <a class="reference external" href="https://en.wikipedia.org/wiki/Adversary_(cryptography)">Wiki</a> <br>
+AONT All-Or-Nothing Transform <a class="reference external" href="https://en.wikipedia.org/wiki/All-or-nothing_transform">Wiki</a> <br>
+AE Authenticated Encryption <a class="reference external" href="https://en.wikipedia.org/wiki/Authenticated_encryption">Wiki</a> <br>
+Authenticator <a class="reference external" href="https://en.wikipedia.org/wiki/Authenticator">Wiki</a> <br>
+Birthday Attack <a class="reference external" href="https://en.wikipedia.org/wiki/Birthday_attack">Wiki</a> <br>
+Birthday Problem <a class="reference external" href="https://en.wikipedia.org/wiki/Birthday_problem">Wiki</a> <br>
+Block Cipher <a class="reference external" href="https://en.wikipedia.org/wiki/Block_cipher">Wiki</a> <br>
+Block Cipher Mode of Operation <a class="reference external" href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation">Wiki</a> <br>
+Brute-Force Attack <a class="reference external" href="https://en.wikipedia.org/wiki/Brute-force_attack">Wiki</a> <br>
+Checksum <a class="reference external" href="https://en.wikipedia.org/wiki/Checksum">Wiki</a> <br>
+CCA Chosen-Ciphertext Attack <a class="reference external" href="https://en.wikipedia.org/wiki/Chosen-ciphertext_attack">Wiki</a> <br>
+CPA Chosen-Plaintext Attack <a class="reference external" href="https://en.wikipedia.org/wiki/Chosen-plaintext_attack">Wiki</a> <br>
+Ciphertext Indistinguishability <a class="reference external" href="https://en.wikipedia.org/wiki/Ciphertext_indistinguishability">Wiki</a> <br>
+Collision Attack <a class="reference external" href="https://en.wikipedia.org/wiki/Collision_attack">Wiki</a> <br>
+Collision Resistance <a class="reference external" href="https://en.wikipedia.org/wiki/Collision_resistance">Wiki</a> <br>
+Commitment Scheme <a class="reference external" href="https://en.wikipedia.org/wiki/Commitment_scheme">Wiki</a> <br>
+Confusion and Diffusion <a class="reference external" href="https://en.wikipedia.org/wiki/Confusion_and_diffusion">Wiki</a> <br>
+Cramer-Shoup <a class="reference external" href="https://en.wikipedia.org/wiki/Cramer%E2%80%93Shoup_cryptosystem">Wiki</a> <br>
+CHF Cryptographic Hash Function <a class="reference external" href="https://en.wikipedia.org/wiki/Cryptographic_hash_function">Wiki</a> <br>
+Cryptographic Primitive <a class="reference external" href="https://en.wikipedia.org/wiki/Cryptographic_primitive">Wiki</a> <br>
+Cryptographic Protocol <a class="reference external" href="https://en.wikipedia.org/wiki/Cryptographic_protocol">Wiki</a> <br>
+DES Data Encryption Standard <a class="reference external" href="https://en.wikipedia.org/wiki/Data_Encryption_Standard">Wiki</a> <br>
+DCRA Decisional Composite Residuosity Assumption <a class="reference external" href="https://en.wikipedia.org/wiki/Decisional_composite_residuosity_assumption">Wiki</a> <br>
+DDH Decisional Diffie-Hellman Assumption <a class="reference external" href="https://en.wikipedia.org/wiki/Decisional_Diffie%E2%80%93Hellman_assumption">Wiki</a> <br>
+Deniable Authentication <a class="reference external" href="https://en.wikipedia.org/wiki/Deniable_authentication">Wiki</a> <br>
+Deniable Encryption <a class="reference external" href="https://en.wikipedia.org/wiki/Deniable_encryption">Wiki</a> <br>
+Deterministic Encryption <a class="reference external" href="https://en.wikipedia.org/wiki/Deterministic_encryption">Wiki</a> <br>
+Dictionary Attack <a class="reference external" href="https://en.wikipedia.org/wiki/Dictionary_attack">Wiki</a> <br>
+Differential Cryptanalysis <a class="reference external" href="https://en.wikipedia.org/wiki/Differential_cryptanalysis">Wiki</a> <br>
+Diffie-Hellman Key Exchange <a class="reference external" href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Wiki</a> <br>
+Digital Signature <a class="reference external" href="https://en.wikipedia.org/wiki/Digital_signature">Wiki</a> <br>
+DSA Digital Signature Algorithm <a class="reference external" href="https://en.wikipedia.org/wiki/Digital_Signature_Algorithm">Wiki</a> <br>
+Discrete Logarithm <a class="reference external" href="https://en.wikipedia.org/wiki/Discrete_logarithm">Wiki</a> <br>
+ElGamal Encryption <a class="reference external" href="https://en.wikipedia.org/wiki/ElGamal_encryption">Wiki</a> <br>
+ECC Elliptic Curve Cryptography <a class="reference external" href="https://en.wikipedia.org/wiki/Elliptic-curve_cryptography">Wiki</a> <br>
+Error Detection and Correction <a class="reference external" href="https://en.wikipedia.org/wiki/Error_detection_and_correction">Wiki</a> <br>
+FIPS Federal Information Processing Standards <a class="reference external" href="https://en.wikipedia.org/wiki/Federal_Information_Processing_Standards">Wiki</a> <br>
+Feistel Network <a class="reference external" href="https://en.wikipedia.org/wiki/Feistel_cipher">Wiki</a> <br>
+Forward Secrecy <a class="reference external" href="https://en.wikipedia.org/wiki/Forward_secrecy">Wiki</a> <br>
+Generic Group Model <a class="reference external" href="https://en.wikipedia.org/wiki/Generic_group_model">Wiki</a> <br>
+GM Goldwasser-Micali Cryptosystem <a class="reference external" href="https://en.wikipedia.org/wiki/Goldwasser%E2%80%93Micali_cryptosystem">Wiki</a> <br>
+GPG GNU Privacy Guard <a class="reference external" href="https://en.wikipedia.org/wiki/GNU_Privacy_Guard">Wiki</a> <br>
+HMAC Keyed-Hash Message Authentication Code <a class="reference external" href="https://en.wikipedia.org/wiki/HMAC">Wiki</a> <br>
+Hash Chain <a class="reference external" href="https://en.wikipedia.org/wiki/Hash_chain">Wiki</a> <br>
+Hash List <a class="reference external" href="https://en.wikipedia.org/wiki/Hash_list">Wiki</a> <br>
+Homomorphic Encryption <a class="reference external" href="https://en.wikipedia.org/wiki/Homomorphic_encryption">Wiki</a> <br>
+Information-Theoretic Security <a class="reference external" href="https://en.wikipedia.org/wiki/Information-theoretic_security">Wiki</a> <br>
+IV Initialization Vector <a class="reference external" href="https://en.wikipedia.org/wiki/Initialization_vector">Wiki</a> <br>
+Integer Factorization <a class="reference external" href="https://en.wikipedia.org/wiki/Integer_factorization">Wiki</a> <br>
+Key <a class="reference external" href="https://en.wikipedia.org/wiki/Key_(cryptography)">Wiki</a> <br>
+Key Agreement Protocol <a class="reference external" href="https://en.wikipedia.org/wiki/Key-agreement_protocol">Wiki</a> <br>
+KDF Key Derivation Function <a class="reference external" href="https://en.wikipedia.org/wiki/Key_derivation_function">Wiki</a> <br>
+Key Distribution <a class="reference external" href="https://en.wikipedia.org/wiki/Key_distribution">Wiki</a> <br>
+Key Exchange <a class="reference external" href="https://en.wikipedia.org/wiki/Key_exchange">Wiki</a> <br>
+Key Schedule <a class="reference external" href="https://en.wikipedia.org/wiki/Key_schedule">Wiki</a> <br>
+Key Stretching <a class="reference external" href="https://en.wikipedia.org/wiki/Key_stretching">Wiki</a> <br>
+KPA Known-Plaintext Attack <a class="reference external" href="https://en.wikipedia.org/wiki/Known-plaintext_attack">Wiki</a> <br>
+Lucifer <a class="reference external" href="https://en.wikipedia.org/wiki/Lucifer_(cipher)">Wiki</a> <br>
+Malleability <a class="reference external" href="https://en.wikipedia.org/wiki/Malleability_(cryptography)">Wiki</a> <br>
+Merkle-Damgard Construction <a class="reference external" href="https://en.wikipedia.org/wiki/Merkle%E2%80%93Damg%C3%A5rd_construction">Wiki</a> <br>
+Merkle-Hellman Knapsack Cryptosystem <a class="reference external" href="https://en.wikipedia.org/wiki/Merkle%E2%80%93Hellman_knapsack_cryptosystem">Wiki</a> <br>
+Merkle’s Puzzles <a class="reference external" href="https://en.wikipedia.org/wiki/Merkle%27s_Puzzles">Wiki</a> <br>
+Merkle Tree <a class="reference external" href="https://en.wikipedia.org/wiki/Merkle_tree">Wiki</a> <br>
+Message Authentication <a class="reference external" href="https://en.wikipedia.org/wiki/Message_authentication">Wiki</a> <br>
+MAC Message Authentication Code <a class="reference external" href="https://en.wikipedia.org/wiki/Message_authentication_code">Wiki</a> <br>
+MD5 Message Digest Algorithm <a class="reference external" href="https://en.wikipedia.org/wiki/MD5">Wiki</a> <br>
+NIST National Institute of Standards and Technology <a class="reference external" href="https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology">Wiki</a> <br>
+zk-SNARK Non-Interactive Zero-Knowledge Proofs <a class="reference external" href="https://en.wikipedia.org/wiki/Non-interactive_zero-knowledge_proof">Wiki</a> <br>
+Non Repudiation <a class="reference external" href="https://en.wikipedia.org/wiki/Non-repudiation">Wiki</a> <br>
+Nothing-Up-My-Sleeve Number <a class="reference external" href="https://en.wikipedia.org/wiki/Nothing-up-my-sleeve_number">Wiki</a> <br>
+Obfuscation <a class="reference external" href="https://en.wikipedia.org/wiki/Obfuscation_(software)">Wiki</a> <br>
+Oblivious Transfer <a class="reference external" href="https://en.wikipedia.org/wiki/Oblivious_transfer">Wiki</a> <br>
+OTP One-Time Pad <a class="reference external" href="https://en.wikipedia.org/wiki/One-time_pad">Wiki</a> <br>
+One-Way Compression Function <a class="reference external" href="https://en.wikipedia.org/wiki/One-way_compression_function">Wiki</a> <br>
+OAEP Optimal Asymmetric Encryption Padding <a class="reference external" href="https://en.wikipedia.org/wiki/Optimal_asymmetric_encryption_padding">Wiki</a> <br>
+Padding <a class="reference external" href="https://en.wikipedia.org/wiki/Padding_(cryptography)">Wiki</a> <br>
+Paillier Cryptosystem <a class="reference external" href="https://en.wikipedia.org/wiki/Paillier_cryptosystem">Wiki</a> <br>
+Passphrase <a class="reference external" href="https://en.wikipedia.org/wiki/Passphrase">Wiki</a> <br>
+Password <a class="reference external" href="https://en.wikipedia.org/wiki/Password">Wiki</a> <br>
+PBKDF Password-Based Key Derivation Function <a class="reference external" href="https://en.wikipedia.org/wiki/PBKDF2">Wiki</a> <br>
+Password Cracking <a class="reference external" href="https://en.wikipedia.org/wiki/Password_cracking">Wiki</a> <br>
+Plaintext Awareness <a class="reference external" href="https://en.wikipedia.org/wiki/Plaintext-aware_encryption">Wiki</a> <br>
+Post-Quantum Cryptography <a class="reference external" href="https://en.wikipedia.org/wiki/Post-quantum_cryptography">Wiki</a> <br>
+Preimage Attack <a class="reference external" href="https://en.wikipedia.org/wiki/Preimage_attack">Wiki</a> <br>
+Primality Test <a class="reference external" href="https://en.wikipedia.org/wiki/Primality_test">Wiki</a> <br>
+PIR Private Information Retrieval <a class="reference external" href="https://en.wikipedia.org/wiki/Private_information_retrieval">Wiki</a> <br>
+Proactive Secret Sharing <a class="reference external" href="https://en.wikipedia.org/wiki/Proactive_secret_sharing">Wiki</a> <br>
+Probabilistic Encryption <a class="reference external" href="https://en.wikipedia.org/wiki/Probabilistic_encryption">Wiki</a> <br>
+PPTA Probabilistic Polynomial-Time Algorithm <a class="reference external" href="https://en.wikipedia.org/wiki/PP_(complexity)">Wiki</a> <br>
+Product Cipher <a class="reference external" href="https://en.wikipedia.org/wiki/Product_cipher">Wiki</a> <br>
+Provable Security <a class="reference external" href="https://en.wikipedia.org/wiki/Provable_security">Wiki</a> <br>
+PRF Pseudorandom Function Family <a class="reference external" href="https://en.wikipedia.org/wiki/Pseudorandom_function_family">Wiki</a> <br>
+Pseudorandom Generator <a class="reference external" href="https://en.wikipedia.org/wiki/Pseudorandom_generator">Wiki</a> <br>
+Public-Key Cryptography <a class="reference external" href="https://en.wikipedia.org/wiki/Public-key_cryptography">Wiki</a> <br>
+PKI Public-Key Infrastructure <a class="reference external" href="https://en.wikipedia.org/wiki/Public_key_infrastructure">Wiki</a> <br>
+QRP Quadratic Residuosity Problem <a class="reference external" href="https://en.wikipedia.org/wiki/Quadratic_residuosity_problem">Wiki</a> <br>
+Random Oracle <a class="reference external" href="https://en.wikipedia.org/wiki/Random_oracle">Wiki</a> <br>
+Related-Key Attack <a class="reference external" href="https://en.wikipedia.org/wiki/Related-key_attack">Wiki</a> <br>
+RSA Rivest-Shamir-Adleman <a class="reference external" href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)">Wiki</a> <br>
+RSA Problem <a class="reference external" href="https://en.wikipedia.org/wiki/RSA_problem">Wiki</a> <br>
+Secure Channel <a class="reference external" href="https://en.wikipedia.org/wiki/Secure_channel">Wiki</a> <br>
+Secure Hash Algorithm <a class="reference external" href="https://en.wikipedia.org/wiki/Secure_Hash_Algorithms">Wiki</a> <br>
+SHA-1 Secure Hash Algorithm 1 <a class="reference external" href="https://en.wikipedia.org/wiki/SHA-1">Wiki</a> <br>
+SHA-2 Secure Hash Algorithm 2 <a class="reference external" href="https://en.wikipedia.org/wiki/SHA-2">Wiki</a> <br>
+SHA-3 Secure Hash Algorithm 3 <a class="reference external" href="https://en.wikipedia.org/wiki/SHA-3">Wiki</a> <br>
+Secure MPC Multi Party Computation <a class="reference external" href="https://en.wikipedia.org/wiki/Secure_multi-party_computation">Wiki</a> <br>
+Secure Two-Party Computation <a class="reference external" href="https://en.wikipedia.org/wiki/Secure_two-party_computation">Wiki</a> <br>
+Security Question <a class="reference external" href="https://en.wikipedia.org/wiki/Security_question">Wiki</a> <br>
+Semantic Security <a class="reference external" href="https://en.wikipedia.org/wiki/Semantic_security">Wiki</a> <br>
+Shamir’s Secret Sharing <a class="reference external" href="https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing">Wiki</a> <br>
+Shared Secret <a class="reference external" href="https://en.wikipedia.org/wiki/Shared_secret">Wiki</a> <br>
+Slide Attack <a class="reference external" href="https://en.wikipedia.org/wiki/Slide_attack">Wiki</a> <br>
+Smart Card <a class="reference external" href="https://en.wikipedia.org/wiki/Smart_card">Wiki</a> <br>
+Standard Model <a class="reference external" href="https://en.wikipedia.org/wiki/Standard_model_(cryptography)">Wiki</a> <br>
+Steganography <a class="reference external" href="https://en.wikipedia.org/wiki/Steganography">Wiki</a> <br>
+Stream Cipher <a class="reference external" href="https://en.wikipedia.org/wiki/Stream_cipher">Wiki</a> <br>
+Stream Cipher Attack <a class="reference external" href="https://en.wikipedia.org/wiki/Stream_cipher_attacks">Wiki</a> <br>
+Substitution-Permutation Network <a class="reference external" href="https://en.wikipedia.org/wiki/Substitution%E2%80%93permutation_network">Wiki</a> <br>
+Time/Memory/Data Tradeoff Attack <a class="reference external" href="https://en.wikipedia.org/wiki/Time/memory/data_tradeoff_attack">Wiki</a> <br>
+Trapdoor Function <a class="reference external" href="https://en.wikipedia.org/wiki/Trapdoor_function">Wiki</a> <br>
+Unicity Distance <a class="reference external" href="https://en.wikipedia.org/wiki/Unicity_distance">Wiki</a> <br>
+Universal Composability <a class="reference external" href="https://en.wikipedia.org/wiki/Universal_composability">Wiki</a> <br>
+Verifiable Secret Sharing <a class="reference external" href="https://en.wikipedia.org/wiki/Verifiable_secret_sharing">Wiki</a> <br>
+Vigenere Cipher <a class="reference external" href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Wiki</a> <br>
+Yao’s Millionaires’ Problem <a class="reference external" href="https://en.wikipedia.org/wiki/Yao%27s_Millionaires%27_problem">Wiki</a> <br>
+Zero-Knowledge Proof <a class="reference external" href="https://en.wikipedia.org/wiki/Zero-knowledge_proof">Wiki</a> <br></p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Cryptology"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="../GameTheory/README.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Game Theory</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="../RandomWalks.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Random Walks</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Dave Friedman<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
